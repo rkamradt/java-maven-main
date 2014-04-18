@@ -41,11 +41,12 @@
     <prerequisites>
         <maven>3.0</maven>
     </prerequisites>
-    <!--scm>
-        <connection>scm:svn:http://md1npdcc01/calabasas/svn/branches/main-3</connection>
-        <developerConnection>scm:svn:http://md1npdcc01/calabasas/svn/branches/main-3</developerConnection>
-        <url>http://md1npdcc01/calabasas/svn/branches/main-3</url>
-    </scm-->
+    <scm>
+     <connection>scm:git:git@github.com/rkamradt/java-maven-main.git</connection>
+     <url>scm:git:git@github.com/rkamradt/java-maven-main.git</url>
+     <developerConnection>scm:git:git@github.com/rkamradt/java-maven-main.git</developerConnection>
+     <tag>HEAD</tag>
+    </scm>
     <distributionManagement>
         <snapshotRepository>
           <id>nexus.snapshot</id>
