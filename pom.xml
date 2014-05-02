@@ -6,14 +6,13 @@
   <description>Contains definitions for common configuration</description>
   <version>1.0-SNAPSHOT</version>
   <properties>
-    <projectServer>art:8080</projectServer>
     <siteDeploy>scp://art/var/lib/tomcat6/webapps</siteDeploy>
   </properties>
   <url>http://${projectServer}/sites/main/${project.version}</url>
   <packaging>pom</packaging>
     <ciManagement>
         <system>jenkins</system>
-        <url>http://${projectServer}/jenkins</url>
+        <url>http://codemonky:8080/</url>
         <notifiers>
             <notifier>
                 <type>mail</type>
@@ -25,7 +24,7 @@
     </ciManagement>
     <issueManagement>
         <system>JIRA</system>
-        <url>http://${projectServer}/jira</url>
+        <url>http://jira.frogandladybug.org/</url>
     </issueManagement>
     <licenses>
         <license>
@@ -52,12 +51,12 @@
           <id>nexus.snapshot</id>
           <name>Internal Snapshot Repository</name>
           <uniqueVersion>true</uniqueVersion>
-          <url>http://art:8080/nexus/content/repositories/snapshots</url>
+          <url>http://nexus.frogandladybug.org/nexus/content/repositories/snapshots</url>
         </snapshotRepository>
         <repository>
           <id>nexus.release</id>
           <name>Internal Release Repository</name>
-          <url>http://art:8080/nexus/content/repositories/releases/</url>
+          <url>http://nexus.frogandladybug.org/nexus/content/repositories/releases/</url>
         </repository>
         <site>
             <id>project-site</id>
