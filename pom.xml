@@ -6,9 +6,9 @@
   <description>Contains definitions for common configuration</description>
   <version>1.0-SNAPSHOT</version>
   <properties>
-    <siteDeploy>scp://art/var/lib/tomcat6/webapps</siteDeploy>
+    <siteDeploy>file://localhost/var/www/html/mavensites</siteDeploy>
   </properties>
-  <url>http://${projectServer}/sites/main/${project.version}</url>
+  <url>http://frogandladybug/mavensites/main/${project.version}</url>
   <packaging>pom</packaging>
     <ciManagement>
         <system>jenkins</system>
@@ -34,8 +34,8 @@
         </license>
     </licenses>
     <organization>
-        <name>Kamradtfamily.net</name>
-        <url>http://kamradtfamily.net/</url>
+        <name>Frogandladybug.org</name>
+        <url>http://frogandladybug.org/mavensites/</url>
     </organization>
     <prerequisites>
         <maven>3.0</maven>
@@ -60,7 +60,7 @@
         </repository>
         <site>
             <id>project-site</id>
-            <url>${siteDeploy}/sites/main/${project.version}</url>
+            <url>${siteDeploy}/mavensites/main/${project.version}</url>
         </site>
     </distributionManagement>
     <inceptionYear>2008</inceptionYear>
