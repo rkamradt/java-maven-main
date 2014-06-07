@@ -41,7 +41,7 @@
         <maven>3.0</maven>
     </prerequisites>
     <scm>
-     <connection>scm:git:http://github.com/rkamradt/java-maven-main.git</connection>
+     <connection>scm:git:https://github.com/rkamradt/java-maven-main.git</connection>
      <developerConnection>scm:git:ssh://git@github.com/rkamradt/java-maven-main.git</developerConnection>
      <url>https://github.com/rkamradt/java-maven-main.git</url>
     </scm>
